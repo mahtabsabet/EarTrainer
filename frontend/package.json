@@ -1,0 +1,9 @@
+{
+  "name": "EarTrainer",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "latest",
+    "express-jwt": "^3.3.0",
+    "gulp": "latest"
+  }
+}
