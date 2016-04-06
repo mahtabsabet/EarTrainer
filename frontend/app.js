@@ -3,7 +3,8 @@ var EarTrainerApp = angular.module( 'EarTrainerApp', [
   'ngRoute',
   'EarTrainerApp.home',
   'angular-storage',
-  'angular-jwt'
+  'angular-jwt',
+  'ngAudio'
 ])
 .config( function myAppConfig ( $routeProvider, authProvider, $httpProvider, $locationProvider,
   jwtInterceptorProvider) {
@@ -23,6 +24,12 @@ var EarTrainerApp = angular.module( 'EarTrainerApp', [
       templateUrl: 'modules/profile/profile.html',
       pageTitle: 'Profile',
       requiresLogin: true
+    })
+    .when( '/audio', {
+      controller: 'AudioController',
+      templateUrl: 'modules/audio/audio.html',
+      pageTitle: 'Audio',
+      requiresLogin: false
     });
 
 
