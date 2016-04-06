@@ -17,6 +17,12 @@ var EarTrainerApp = angular.module( 'EarTrainerApp', [
       controller: 'LoginController',
       templateUrl: 'modules/login/login.html',
       pageTitle: 'Login'
+    })
+    .when( '/profile', {
+      controller: 'ProfileController',
+      templateUrl: 'modules/profile/profile.html',
+      pageTitle: 'Profile',
+      requiresLogin: true
     });
 
 
