@@ -30,7 +30,13 @@ var EarTrainerApp = angular.module( 'EarTrainerApp', [
       templateUrl: 'modules/audio/audio.html',
       pageTitle: 'Audio',
       requiresLogin: false
+    })
+    .when('/quiz', {
+      controller: 'QuizController',
+      templateUrl: 'modules/quiz/quiz.html',
+      pageTitle: 'Quiz'
     });
+
 
 
   authProvider.init({
